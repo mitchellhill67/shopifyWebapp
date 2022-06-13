@@ -93,7 +93,7 @@ export default {
     return {
       inventory: [
         {'name': "Item #1", 'description': "Description for Item #1", 'quantity': 0, 'price': 100, 'location': "Berlin"},
-        {'name': "Item #2", 'description': "Description for Item #2", 'quantity': 1, 'price': 200, 'location': "Belfast"},
+        {'name': "Item #2", 'description': "Description for Item #2", 'quantity': 1, 'price': 150, 'location': "Belfast"},
         {'name': "Item #3", 'description': "Description for Item #3", 'quantity': 1, 'price': 100, 'location': "Barcelona"}
       ],
       warehouses: [
