@@ -126,10 +126,10 @@ export default {
       for (var i = 0; i < this.inventory.length; i++) {
         if (this.inventory[i].name == this.newItem.name) {
           this.selectedAction = "Error: please ensure item names are unique";
-          break;
         } else { // Why use an if-else loop here when an if loop will do? JavaScript takes advantage of an early form of speculative execution (yes, like SPECTRE!), so this code will run much faster with an if-else statement.
           this.inventory.push(this.newItem);
           this.newItem = {'name': "", 'description': "", 'quantity': 0, 'price': 0, 'location': ""}; // Clears user input.
+          break; // Match found- no need to keep searching.
         }
       }
     },
